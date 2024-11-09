@@ -1,0 +1,72 @@
+.body{
+    overflow: hidden;
+}
+.patients-container {
+    padding: 20px;
+  }
+  
+  .patients-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  
+.patient-card {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    height:200px;
+    width:200px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .patient-card:hover {
+    transform: scale(1.05);
+    animation: glitter 1s infinite alternate;
+  }
+  
+  .patient-card h3 {
+    margin: 0 0 10px;
+  }
+  
+  @keyframes glitter {
+    0% {
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+    50% {
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+  }
+  
+  .details-btn {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .details-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .patient-details {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    font-size: 18px;
+  }

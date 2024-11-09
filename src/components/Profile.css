@@ -1,0 +1,102 @@
+.profile-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 1000px;
+  margin: 110px auto; 
+  padding-top: 60px;
+  background-color: #f9f9f9; 
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  padding-bottom: 20px; 
+}
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #000000; 
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-top: 40px;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.about-section,
+.details-section {
+  width: 100%;
+  max-width: 350px; 
+  text-align: left;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  width: 180px; 
+  height: 180px;
+  object-fit: cover; 
+  border: 5px solid #000000; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.about-section h2,
+.details-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+p {
+  line-height: 1.7;
+  color: #555; 
+}
+
+.details-section p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #000000;
+  font-size: 1.8em;
+  margin: 0 12px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #333; 
+}
+
+@media screen and (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .about-section,
+  .details-section {
+    width: 80%;
+  }
+}

@@ -1,0 +1,19 @@
+.container{
+    padding-top:300px;
+}
+
+.details{
+    align-items: center;
+    width: 500px;
+    margin-left: 500px;
+}
+.qq{
+    margin-top: 40px;
+}
+.button{
+padding: 100px;
+}
+.score{
+    
+    color: blueviolet;
+}
